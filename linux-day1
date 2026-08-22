@@ -1,3 +1,5 @@
 ip address show
 ip a
 ssh sameer@192.168.100.84
+whoami
+id
