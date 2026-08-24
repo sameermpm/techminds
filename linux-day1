@@ -8,3 +8,11 @@ hostname
 sudo su -
 echo "Hello Linux"
 echo $SHELL
+
+############day 2
+
+ip link
+ip route
+ip route | grep default
+cat /etc/resolv.conf
+resolvectl status
