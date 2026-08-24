@@ -17,3 +17,9 @@ ip route
 ip route | grep default
 cat /etc/resolv.conf
 resolvectl status
+
+touch sameer.txt
+ls
+   -a all
+   -h human friendly
+   -l long listing
