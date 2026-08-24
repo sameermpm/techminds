@@ -23,3 +23,6 @@ ls
    -a all
    -h human friendly
    -l long listing
+nano sameer.txt
+   ctrl + o # to save
+   ctrl +x # to save and exit
