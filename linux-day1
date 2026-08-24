@@ -23,6 +23,42 @@ ls
    -a all
    -h human friendly
    -l long listing
-nano sameer.txt
+   nano sameer.txt
    ctrl + o # to save
    ctrl +x # to save and exit
+   52  ls -l 
+   53  ls -lh
+   54  ls -lh /etc
+   55  ls -la
+   56  file sameer.txt # show the file type
+   57  file .noufal 
+   58  touch linux #  create empty file
+   59  file linux
+   60  echo "Linux is a awsome operating system" # show the output in the screen
+   61  echo "Linux is a awsome operating system" > linux # redirect the output to linux file
+   62  cat linux # display file content in the screen
+   63  file linux 
+   64  mkdir friends # create directory
+   65  ls # list
+   66  ls -l # long listing
+   67  cd friends/ # change directory
+   68  pwd
+   69  mkdir abc 
+   70  ls
+  
+   
+   80  cd .. # cd to parent directory
+   81  cd # cd to home directory
+   82  pwd
+   83  cd - # cd to previous directory
+   84  cd /etc/ssh/
+   85  cd
+   86  pwd
+   87  cd -
+   88  pwd
+   89  cd
+   90  cd -
+   91  cd ..
+   92  cd ~
+   93  history
+
