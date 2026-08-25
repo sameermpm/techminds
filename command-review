@@ -1,0 +1,24 @@
+##########################################################################
+##################### Section 1 -- BASIC COMMANDS ########################
+##########################################################################
+
+1.
+  hostname # display server hostname
+2.
+  whoami # display loggedin username
+3.
+   id # display logged in user's detail
+4.
+   ip link # display the network card hardware information
+5.
+    ip addr # display ip address
+6.
+   ip route | grep default # display default gateway
+7.
+   lsblk # list block device information, ideal for collecting disk details
+8.
+    df -h #  disk free -- get file system information , -h for human friendly output
+9.
+   free -h | get memory usage information
+10.
+   sudo su - | escalate to root user
