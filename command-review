@@ -22,3 +22,14 @@
    free -h | get memory usage information
 10.
    sudo su - | escalate to root user
+
+##############################################################################
+###################### File / Directory Management ###########################
+##############################################################################
+1.
+  touch testfile.txt # create empty file named testfile.txt or update file timestamp if file already exist
+2.
+  echo Hello # output hello to screen
+  echo Hello > testfile.txt # writes Hello to testfile.txt, create testfile.txt if does not exist
+  echo HEllo >> testfile.txt # append HEllo to testfile.txt , create testfile.txt if does not exist
+
