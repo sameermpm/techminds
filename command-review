@@ -32,4 +32,13 @@
   echo Hello # output hello to screen
   echo Hello > testfile.txt # writes Hello to testfile.txt, create testfile.txt if does not exist
   echo HEllo >> testfile.txt # append HEllo to testfile.txt , create testfile.txt if does not exist
+  name="Mohammed"
+  echo $name
+  echo $HOME
+3. cat testfile.txt # display the content of the file testfile.exe on the screen
+4. head /etc/passwd # display first 10 lines of the file
+   head -n 5 /etc/passwd #display first 5 lines of the file
+5. tail /etc/passwd # display last 10 lines of the file
+   tail -n 5 /etc/passwd #display last 5 lines of the file
+   tail -f /var/log/nginx/access.log # as new lines added to access.log file, it will display immediately
 
