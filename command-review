@@ -22,23 +22,65 @@
    free -h | get memory usage information
 10.
    sudo su - | escalate to root user
+11.
+   cat /etc/os-release # display operating system information
 
 ##############################################################################
 ###################### File / Directory Management ###########################
 ##############################################################################
-1.
+1. ##creates a new file or updates an existing file’s timestamp in Linux.##
+
   touch testfile.txt # create empty file named testfile.txt or update file timestamp if file already exist
-2.
+
+2. ## displays text or variables in the terminal. ##
+
   echo Hello # output hello to screen
   echo Hello > testfile.txt # writes Hello to testfile.txt, create testfile.txt if does not exist
   echo HEllo >> testfile.txt # append HEllo to testfile.txt , create testfile.txt if does not exist
   name="Mohammed"
   echo $name
   echo $HOME
-3. cat testfile.txt # display the content of the file testfile.exe on the screen
-4. head /etc/passwd # display first 10 lines of the file
+
+3. ## displays the contents of a file in the terminal. ##
+
+  cat testfile.txt # display the content of the file testfile.exe on the screen
+
+4. ## displays the first few lines of a file. ##
+
+   head /etc/passwd # display first 10 lines of the file
    head -n 5 /etc/passwd #display first 5 lines of the file
-5. tail /etc/passwd # display last 10 lines of the file
+
+5. ## displays the last few lines of a file. ##
+
+   tail /etc/passwd # display last 10 lines of the file
    tail -n 5 /etc/passwd #display last 5 lines of the file
    tail -f /var/log/nginx/access.log # as new lines added to access.log file, it will display immediately
+6. ## creates new directory ##
 
+  mkdir project_alpha # create directory
+  mkdir -p logs/lab/jan # create directory and parent directories
+
+7. ##change directory ##
+
+  cd project_alpha # change directory to project_alpha
+  cd .. # change to parent directory
+  cd # change to home directory
+  cd ~ # change to home directory
+  cd - # change to previous directory
+
+8. ## copy files or directories ##
+
+  cp file1.txt file1.bak # copy file
+  cp -r project_alpha project_beta # copy directory to another directory recusevely
+
+9. ## move files or directories ##
+
+  mv file1.bak file1.old # rename file
+  mv file1.old project_alpha/ # move file 
+
+10. ## delete files or directories
+
+  rm file_to_delete.txt # remove file
+  rmdir empty_dir # remove empty directory
+  rm -rf data_dir # remove directtory which is not empty
+  
