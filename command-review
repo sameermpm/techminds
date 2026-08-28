@@ -111,7 +111,7 @@
 5. ## manage user with usermod
 
   sudo usermod -l newname oldname # rename user
-  sudo usermod -L username # lock user
+  sudo usermod -L username # lock user , adds ! before password in /etc/shadow file , you can still su to this user with sudo
   sudo usermod -U username # unlock user
   sudo usermod -s /usr/sbin/nologin username # block shell access
   
