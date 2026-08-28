@@ -87,12 +87,32 @@
 ##############################################################################
 ###################### User / Group Management ###########################
 ##############################################################################
-  1. list of important files/directories
+  1. ## list of important files/directories
+
       /etc/passwd
       /etc/shadow
       /etc/group
       /etc/skel
+
  2. ## create a new user with useradd
-      useradd -d /home/noufal -m noufal
+
+   sudo useradd -d /home/noufal -m noufal
        -m make home direcotry
        -d set home directory path
+3. ## set password for the user
+
+  sudo passwd noufal
+
+4. ## Understand /etc/passwd file
+
+ tail /etc/passwd
+  username:x:userid:groupid:gecos:homedirectory:loginshell
+
+5. ## manage user with usermod
+
+  sudo usermod -l newname oldname # rename user
+  sudo usermod -L username # lock user
+  sudo usermod -U username # unlock user
+  sudo usermod -s /usr/sbin/nologin username # block shell access
+  
+
