@@ -13,15 +13,16 @@
 5.
     ip addr # display ip address
 6.
-   ip route | grep default # display default gateway
+   ip route # grep default # display default gateway
 7.
    lsblk # list block device information, ideal for collecting disk details
 8.
     df -h #  disk free -- get file system information , -h for human friendly output
 9.
-   free -h | get memory usage information
+   free -h # get memory usage information
 10.
-   sudo su -i | escalate to root user
+   sudo su - # escalate to root user
+   sudo -i # escalate to root user
 11.
    cat /etc/os-release # display operating system information
 
@@ -97,11 +98,12 @@
  2. ## create a new user with useradd
 
    sudo useradd -d /home/noufal -m noufal
-       -m make home direcotry
+       -m make home direcotry and populate it with /etc/skel
        -d set home directory path
 3. ## set password for the user
 
-  sudo passwd noufal
+  sudo passwd noufal # set password for noufa
+  passwd # change password for current user
 
 4. ## Understand /etc/passwd file
 
@@ -114,5 +116,14 @@
   sudo usermod -L username # lock user , adds ! before password in /etc/shadow file , you can still su to this user with sudo
   sudo usermod -U username # unlock user
   sudo usermod -s /usr/sbin/nologin username # block shell access
+
+6. ## switch user
+  su # switch to root user, in ubuntu, by default root is disabled and cannot swith to root using this command
+  sudo passwd # enable root account
+  sudo su - # switch to root even if the root is disabled
+  exit # logout from the user
+  su - noufal # switch to user noufal with providing noufal's password
+  sudo su - noufal # switch to user noufal without providing password
+  
   
 
