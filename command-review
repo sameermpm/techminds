@@ -83,4 +83,16 @@
   rm file_to_delete.txt # remove file
   rmdir empty_dir # remove empty directory
   rm -rf data_dir # remove directtory which is not empty
-  
+
+##############################################################################
+###################### User / Group Management ###########################
+##############################################################################
+  1. list of important files/directories
+      /etc/passwd
+      /etc/shadow
+      /etc/group
+      /etc/skel
+ 2. ## create a new user with useradd
+      useradd -d /home/noufal -m noufal
+       -m make home direcotry
+       -d set home directory path
