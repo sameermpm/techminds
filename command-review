@@ -124,6 +124,10 @@
   exit # logout from the user
   su - noufal # switch to user noufal with providing noufal's password
   sudo su - noufal # switch to user noufal without providing password
-  
+
+7. ## delete user account
+   sudo userdel -r username
+    -r # will delete user's home directory
+
   
 
