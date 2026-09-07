@@ -129,5 +129,36 @@
    sudo userdel -r username
     -r # will delete user's home directory
 
-  
+8. ## See the groups your current user belongs to
 
+   groups
+   id
+
+9.  ## lsit all groups
+
+    cat /etc/group
+       groupname:x:groupid:memebers
+
+10. ## create a group
+    sudo groupadd developers
+
+11. ## Add a user to a group
+
+   sudo usermod -aG developers ahmed
+        -a = append
+        -G = supplimentary group   
+  12. ## Check whether the user was added 
+       groups ahmed
+
+  13. Remove a user from group
+
+     sudo gpasswd -d ahmed developers # this command will remove ahmed from developers group, you can use usermod command as well, but you should mention which all groups to keep and do not mention the group to remove.
+
+      groups ahmed
+      ahmed : ahmed sudo docker developers
+      sudo usermod -G sudo,docker ahmed
+  
+  14. ## Delete a group.
+
+     sudo groupdel developers
+       
