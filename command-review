@@ -25,7 +25,13 @@
    sudo -i # escalate to root user
 11.
    cat /etc/os-release # display operating system information
+12.
+  uname # diplsay kernal name of OS
+   -r # show kernel version
+   -a # all details
 
+13.
+  uptime # display uptime of the system
 ##############################################################################
 ###################### File / Directory Management ###########################
 ##############################################################################
